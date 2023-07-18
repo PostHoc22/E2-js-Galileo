@@ -51,7 +51,7 @@ const pizzas = [
 // Ejercicio a): Las pizzas que tengan un id impar:
 console.log("// Ejercicio a) - Las pizzas que tengan un id impar. //");
 console.log(
-  "Las pizzas que tienen un id impar y de las cuales vas a poder aproechar su descuento son:"
+  "Las pizzas que tienen un id impar y de las cuales vas a poder aprovechar su descuento son:"
 );
 const idImpar = () => {
   pizzas.forEach((pizza) => {
