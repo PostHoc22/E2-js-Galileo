@@ -50,10 +50,11 @@ const pizzas = [
 
 // Ejercicio a): Las pizzas que tengan un id impar:
 console.log("// Ejercicio a) - Las pizzas que tengan un id impar. //");
-console.log(
-  "Las pizzas que tienen un id impar y de las cuales vas a poder aprovechar su descuento son:"
-);
+
 const idImpar = () => {
+  console.log(
+    "Las pizzas que tienen un id impar y de las cuales vas a poder aprovechar su descuento son:"
+  );
   pizzas.forEach((pizza) => {
     if (pizza.id % 2 != 0)
       console.log(`* La "${pizza.nombre}", con ID ${pizza.id}`);
@@ -85,16 +86,23 @@ cuestaMenosQue600();
 console.log(
   "// Ejercicio c): El nombre de cada pizza con su respectivo precio. //"
 );
-console.log("Nuestro Menu:");
-pizzas.forEach((pizza) => {
-  console.log(`* ${pizza.nombre} - $${pizza.precio}`);
-});
+const nuestroMenu = () => {
+  console.log("Nuestro Menu:");
+  pizzas.forEach((pizza) => {
+    console.log(`* ${pizza.nombre} - $${pizza.precio}`);
+  });
+};
+nuestroMenu();
 
 // Ejercicio d): Todos los ingredientes de cada pizza (En cada iteración imprimir los ingredientes de la pizza que se esta recorriendo). Ayuda: van a tener que realizar dos recorridos, ya que cada pizza del array de pizzas tiene una propiedad "ingredientes" cuyo valor es un array con ingredientes.
 console.log("// Ejercicio d): Todos los ingredientes de cada pizza //");
-console.log("Te detallamos los ingredientes de cada una de nuestras pizzas:");
-pizzas.forEach((pizza) => {
-  console.log(
-    `*  ${pizza.nombre} - Ingredientes: ${pizza.ingredientes.join(", ")}.`
-  );
-});
+
+const ingredientes = () => {
+  console.log("Te detallamos los ingredientes de cada una de nuestras pizzas:");
+  pizzas.forEach((pizza) => {
+    console.log(
+      `*  ${pizza.nombre} - Ingredientes: ${pizza.ingredientes.join(", ")}.`
+    );
+  });
+};
+ingredientes();
